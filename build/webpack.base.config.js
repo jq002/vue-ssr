@@ -57,7 +57,14 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        // use: [
+        //   {
+            loader: "babel-loader",
+        //     options: {
+        //       "presets": [["es2015", {"modules": false}], "react"]
+        //     }
+        //   }
+        // ],
         exclude: /node_modules/
       },
       {
